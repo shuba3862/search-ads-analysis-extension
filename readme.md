@@ -13,7 +13,7 @@ For Search queries through `duckduckgo.com`
 
 1. git clone https://github.com/shuba3862/search-ads-analysis-extension.git
 2. Go to chrome://extensions and load `app` directory from `search-ads-analysis-extension`
-3. Enable the extension and pin the extension iconr.
+3. Enable the extension and pin the extension icon.
 
 ## Test the functionality
 
@@ -32,17 +32,17 @@ For Search queries through `duckduckgo.com`
 - In order to style the Ads in the search results with the background color:  
   - Identify all search result elements having Ads in the DOM through content script.
   - Then through content script add class to all the search result elements having Ads. 
-  - Then use that added class to style with background-color in a seperate css file. 
+  - Then use that added class to style with background-color in a separate css file. 
   - This approach helps keep the JS and styling logic seperate in their respective files vs directly setting styles for the DOM through JS. This also enables the code to be extensible for adding additional styles 
 
 - Used [webNavigation.onBeforeNavigate](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onBeforeNavigate) API to intercept the search query call for duckduckgo.com and update the query with `in 2021` keyword. The other option was to use [webRequest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest) API but `webRequest` is more ideal for modifying requests at a lower level such as handling redirects or adding headers which does not apply to our requirement.
 
-- Added logic to avoid appending the `in 2021` multiple times such that if query already has `in 2021` appended, it won't append again.
+- Added logic to avoid appending the `in 2021` multiple times such that if the query already has `in 2021` appended, it won't append again.
  
 ## Testing
 
-I did evaluate few open source solutions for adding automated tests for browser extensions but I could not find a robust open source solution. Here are my evaluation details
+I looked for open source solutions for adding automated tests for browser extensions but I could not find any robust open source solution for testing Browser extensions.
 
-- [sinon-chrome](https://github.com/acvetkov/sinon-chrome) is good but is built for `chrome` and does not seem have out of the box solution for `browser/webExtension` APIs.
+- [sinon-chrome](https://github.com/acvetkov/sinon-chrome) is good but is built for `chrome` and does not seem to have an out of the box solution for mocking `browser/webExtension` APIs.
 - #TODO: Update repo with automated tests using sinon-chrome
 
