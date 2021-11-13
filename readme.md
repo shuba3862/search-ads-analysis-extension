@@ -11,7 +11,7 @@ For Search queries through `duckduckgo.com`
 
 ## How to load the extension
 
-1. Clone the git repo: https://github.com/shuba3862/search-ads-analysis-extension.git
+1. git clone https://github.com/shuba3862/search-ads-analysis-extension.git
 2. Go to chrome://extensions and load `app` directory from `search-ads-analysis-extension`
 3. Enable the extension and pin the extension iconr.
 
