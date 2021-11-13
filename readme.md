@@ -43,5 +43,6 @@ For Search queries through `duckduckgo.com`
 
 I did evaluate few open source solutions for adding automated tests for browser extensions but I could not find a robust open source solution. Here are my evaluation details
 
-- [sinon-chrome](https://github.com/acvetkov/sinon-chrome) is good but is built for `chrome` and does not have out of the box solution for `browser/webExtension` APIs. TODO: Continue to investigate and update this repo.
+- [sinon-chrome](https://github.com/acvetkov/sinon-chrome) is good but is built for `chrome` and does not seem have out of the box solution for `browser/webExtension` APIs.
+- #TODO: Update repo with automated tests using sinon-chrome
 
