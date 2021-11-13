@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "ads info analysis",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Ads Information Analysis in Search",
+    "description": "The description of the application"
+  }
+}
