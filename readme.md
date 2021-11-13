@@ -1,10 +1,10 @@
 # Search Ads Analysis Browser Extension
 
-Browser Extension that highlights Ads in search results for duckduckgo.com
+Browser Extension that analyzes Ads in search results for `duckduckgo.com`
 
 ## Features
 
-For duckduckgo.com
+For Search queries through `duckduckgo.com` 
 - Changes background color of Ads in search results to color Red 
 - Appends **in 2021** to all search queries
 - Shows number of Ads in each open search tab in extension popup
