@@ -1,4 +1,4 @@
-# Ad Analysis Chrome Extension
+# Search Ads Analysis Browser Extension
 
 Browser Extension that highlights Ads in search results for duckduckgo.com
 
